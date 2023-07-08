@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  --main: rgb(90, 206, 90);
+  --bgColor: white;
+}
+
+body {
+  max-width: 100vw;
+  max-height: 100vh;
+  background-color: whitesmoke;
+}
+
+nav {
+  display: flex;
+  margin: 0.5rem 0.625rem;
+  align-items: center;
+  justify-content: space-around;
+}
+.logo {
+  padding: 0.625rem;
+  border: 0rem solid transparent;
+  background-color: lightgray;
+  border-radius: 50%;
+  margin-right: 0.313rem;
+  color: var(--main);
+}
+
+.hero {
+  background-color: var(--main);
+  border-radius: 0.625rem;
+  margin: 0.938rem 0.438rem;
+  padding: 0.938rem 0.75rem;
+  line-height: 2rem;
+  color: var(--bgColor);
+  margin-bottom: 0.438rem;
+}
+
+.hero1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 0.625rem;
+}
+
+.hero2 div i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--bgColor);
+  border: 0.063rem solid var(--bgColor);
+  cursor: pointer;
+  color: var(--main);
+  padding: 0.5rem;
+  width: 1.875rem;
+  border-radius: 0.625rem;
+  /* margin-left: 0.625rem; */
+}
+
+.swipe {
+  text-align: right;
+  margin: 0.625rem;
+}
+
+.advert {
+  display: flex;
+  justify-content: space-between;
+  background: var(--bgColor);
+  border: 0.063 solid inherit;
+  padding: 0.938rem;
+  border-radius: 0.625rem;
+  margin: 0.625rem;
+}
+
+.advert i {
+  border: 0.125 solid inherit;
+  background: lightgray;
+  padding: 0.625rem;
+  border-radius: 50%;
+}
+.cancel {
+  background: lightgray;
+  border: 0.063rem solid inherit;
+  margin-top: -0.938rem;
+  margin-right: -0.938rem;
+  padding: 0.313rem;
+  overflow: hidden;
+  border-radius: 0rem 0.625rem 0rem 3.125rem;
+  height: 1.25rem;
+}
+
+.appActivity {
+  display: grid;
+  grid-template-columns: repeat(4, 4rem);
+  margin: 1.25rem 0.625rem;
+  background: var(--bgColor);
+  padding: 3rem 1rem;
+  gap: 1.563rem;
+  text-align: center;
+  height: 12rem;
+}
+
+.appActivityMain {
+  border: 0.063rem solid inherit;
+  background-color: lightgray;
+  padding: 1.25rem;
+  border-radius: 50%;
+  margin-bottom: 0.938rem;
+  margin-left: 0.625rem;
+  width: 1rem;
+}
+
+.cashback {
+  background-color: red;
+  font-size: 0.7rem;
+  padding: 0.313rem;
+  border-radius: 0.813rem 0.813rem 0.813rem 0rem;
+  margin-top: -1.25rem;
+  margin-right: -1.875rem;
+  width: 4rem;
+  float: right;
+  color: white;
+}
+
+.referAdvert {
+  background: white;
+  padding: 0.938rem;
+  border-radius: 0.938rem;
+  margin: 0rem 0.625rem;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  background: white;
+  margin: 0.625rem;
+  margin-bottom: 0rem;
+  padding: 0.625rem;
+  position: fixed;
+  bottom: 0;
+  width: 92%;
+  z-index: 100;
+}
+
+@media (min-width: 750px) {
+  .appActivity {
+    gap: 7.563rem;
+    height: 23.5rem;
+  }
+
+  .appActivityMain {
+    width: 6rem;
+    height: 4rem;
+  }
+
+  .cashback {
+    font-size: 1rem;
+    margin-top: -2.25rem;
+    margin-right: -7.875rem;
+    width: 6rem;
+  }
+}
+
+@media (min-width: 410px) {
+  .appActivity {
+    padding: 3rem 2rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .appActivity {
+    padding: 1rem 0.2rem;
+  }
+}
